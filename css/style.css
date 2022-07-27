@@ -1,0 +1,230 @@
+body {
+    margin: 0;
+    font-family: 'Noto Serif JP', serif;
+    font-weight: lighter;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+* {
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+a {
+    transition: 0.2s;
+    color: #000;
+}
+a:hover {
+    opacity: 0.4;
+}
+
+img {
+    display: block;
+    /* width: 100%; */
+    height: auto;
+}
+
+header {
+    width: 100%;
+    height: 56px;
+    background-color: #747f90;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    padding: 8px 0 24px;
+}
+
+.header-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header-inner__logo {
+    filter: drop-shadow(0 4px 4px rgba(0,0,0,0.25));
+}
+.header-list {
+    display: flex;
+}
+.header-list a{
+    margin: 0 0 0 48px;
+    font-family: 'Hepta Slab', serif;
+    font-weight: lighter;
+    color: #ffffff;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
+}
+
+.hero {
+    position: relative;
+    width: 100%;
+}
+.hero p {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    top: calc(50% - 32px);
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 4px 4px 2px rgba(0,0,0,0.5);
+    text-align: center;
+    font-family: 'Hepta Slab', serif;
+    font-weight: lighter;
+    font-size: 48px;
+}
+.hero img {
+    width: 100%;
+}
+
+.page-content {
+    max-width: 1080px;
+    margin: 0 auto;
+    padding: 0 0 -8px 0;
+}
+
+h1 {
+    border-bottom: solid 4px #747f90;
+    font-family: 'Hepta Slab', serif;
+    font-size: 48px;
+    line-height: 56px;
+    text-align: center;
+    margin: 160px 0 104px 0;
+    font-weight: lighter;
+}
+
+h2 {
+    border-bottom: solid 2px #747f90;
+    font-family: 'Noto Serif JP', serif;
+    font-size: 32px;
+    text-align: left;
+    margin: 4px 0 16px 0;
+    font-weight: lighter;
+}
+
+.works-list {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    max-width: 1080px;
+    margin: 0 auto;
+    flex-shrink: 0;
+}
+.works-list img{
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    margin: 0 0px 80px 0px;
+    /* margin: 0 16px 80px 16px; */
+    display: inline-block;
+    object-fit: contain;
+}
+.works-list__img_r img{
+    margin-left: -144px;
+}
+.works-list__exp{
+    margin: 0 0 80px 0;
+    max-width: 476px;
+}
+.works-list li {
+    display: inline-block;
+    /* width: 476px; */
+    width: 460px;
+    padding: 0 0 0 0;
+}
+.works-list h2 {
+    padding: 0 0 0 24px;
+    margin-bottom: 24px;
+}
+.works-list p {
+    padding: 0 0 0 24px;
+}
+.works-textlist li{
+    display: inline-block;
+    width: 640px;
+    padding: 0 0 80px 0;
+}
+.works-textlist h2 {
+    padding: 0 0 0 24px;
+    margin-bottom: 24px;
+}
+.works-textlist a {
+    padding: 0 0 0 24px;
+}
+.works-textlist img {
+    display: inline-block;
+    margin-right: 4px;
+    vertical-align: text-bottom;
+}
+
+.about-content {
+    display: flex;
+}
+.about-content img {
+    box-shadow: 0 4px 4px rgba(0,0,0,0.25);
+    margin: 0 16px 240px 0px;
+    display: inline-block;
+}
+.about-content dl {
+    width: 636px;
+}
+.about-content h2 {
+    padding: 0 0 0 24px;
+}
+.about-content dt {
+    font-size: 24px;
+    margin: 40px 0 0 24px;
+}
+.about-content dd {
+    font-size: 16px;
+    margin: 8px 0 0 24px;
+}
+
+footer {
+    width: 100%;
+    height: 80px;
+    background-color: #747f90;
+}
+.footer-inner {
+    max-width: 1080px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+.footer-inner__title {
+    line-height: 80px;
+    font-size: 24px;
+    font-family: 'Hepta Slab', serif;
+    font-weight: lighter;
+    color: #ffffff;
+    text-shadow: 2px 2px 1px rgba(0,0,0,0.5);
+}
+.footer-innter-list {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.footer-inner-list__copy {
+    font-size: 12px;
+    line-height: 78px;
+    font-family: 'Hepta Slab', serif;
+    font-weight: lighter;
+    color: #ffffff;
+    text-shadow: 1px 1px 1px rgba(0,0,0,0.5);
+    vertical-align: middle;
+}
+.footer-inner-list img {
+    display: inline;
+    margin-left: 32px;
+    vertical-align: middle;
+    filter: drop-shadow(0 4px 4px rgba(0,0,0,0.25));
+}
+.footer-inner-list li {
+    display: inline;
+}
+.footer-inner-list p {
+    display: inline;
+    vertical-align: middle;
+}
